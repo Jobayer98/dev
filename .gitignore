@@ -23,7 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-components
 hooks
 lib
 pages
