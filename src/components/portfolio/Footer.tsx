@@ -18,22 +18,22 @@ const Footer = () => {
           {/* Logo/Name */}
           <div className="text-center">
             <h3 className="text-xl sm:text-2xl font-bold font-space text-gradient-primary mb-2">
-              Alex Chen
+              Jobayer Rahman
             </h3>
             <p className="text-muted-foreground text-sm sm:text-base">
-              Creative Developer & UI/UX Designer
+              Full Stack Engineer
             </p>
           </div>
 
           {/* Navigation Links */}
           <nav className="flex flex-wrap justify-center gap-4 sm:gap-6 lg:gap-8 text-xs sm:text-sm">
             {[
-              { name: 'Home', href: '#hero' },
-              { name: 'About', href: '#about' },
-              { name: 'Portfolio', href: '#portfolio' },
-              { name: 'Experience', href: '#experience' },
-              { name: 'Testimonials', href: '#testimonials' },
-              { name: 'Contact', href: '#contact' },
+              { name: "Home", href: "#hero" },
+              { name: "About", href: "#about" },
+              { name: "Portfolio", href: "#portfolio" },
+              { name: "Experience", href: "#experience" },
+              { name: "Testimonials", href: "#testimonials" },
+              { name: "Contact", href: "#contact" },
             ].map((link) => (
               <a
                 key={link.name}
@@ -41,7 +41,9 @@ const Footer = () => {
                 className="text-muted-foreground hover:text-primary transition-colors duration-smooth hover:scale-105 transform px-2 py-1"
                 onClick={(e) => {
                   e.preventDefault();
-                  document.getElementById(link.href.slice(1))?.scrollIntoView({ behavior: 'smooth' });
+                  document
+                    .getElementById(link.href.slice(1))
+                    ?.scrollIntoView({ behavior: "smooth" });
                 }}
               >
                 {link.name}
@@ -53,16 +55,16 @@ const Footer = () => {
           <div className="w-full max-w-xs sm:max-w-md h-px bg-gradient-primary opacity-30" />
 
           {/* Copyright */}
-          <div className="flex flex-col sm:flex-row items-center justify-between w-full max-w-4xl gap-3 sm:gap-4 text-xs sm:text-sm text-muted-foreground text-center sm:text-left">
+          <div className="flex flex-col sm:flex-row items-center justify-center w-full max-w-4xl gap-3 sm:gap-4 text-xs sm:text-sm text-muted-foreground text-center sm:text-left">
             <div className="flex items-center gap-1 sm:gap-2 flex-wrap justify-center">
-              <span>© {currentYear} Alex Chen. Made with</span>
+              <span>© {currentYear} Jobayer Rahman. Made with</span>
               <Heart className="h-3 w-3 sm:h-4 sm:w-4 text-primary animate-pulse" />
               <span>and lots of coffee.</span>
             </div>
-            
-            <div className="text-xs opacity-75">
+
+            {/* <div className="text-xs opacity-75">
               Built with React, TypeScript & Tailwind CSS
-            </div>
+            </div> */}
           </div>
 
           {/* Back to Top Button */}

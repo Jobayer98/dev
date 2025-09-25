@@ -13,7 +13,7 @@ const Index = () => {
       <AboutSection />
       <PortfolioSection />
       <ExperienceSection />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
       <ContactSection />
       <Footer />
     </div>
